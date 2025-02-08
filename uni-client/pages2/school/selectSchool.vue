@@ -135,7 +135,7 @@ page {
 		height: 100%;
 	}
 
-	/deep/ .indicator-class {
+	>>> .indicator-class {
 		background: #EEF5FE;
 		z-index: -1;
 	}

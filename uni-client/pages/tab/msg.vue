@@ -27,7 +27,7 @@
 							@click="delClick">
 							<view class="item" @click="actionClick(i)">
 								<image class="ava" :src="i.headPortrait"  mode="aspectFill"></image>
-								<u-badge customStyle="margin-left:11%;margin-bottom: 10%;" style="margin-bottom: ;" v-if="i.unreadCount!==null" max="99" :value="i.unreadCount" :absolute="true">
+								<u-badge customStyle="margin-left:11%;margin-bottom: 10%;" v-if="i.unreadCount!==null" max="99" :value="i.unreadCount" :absolute="true">
 								</u-badge>
 							<!-- 	<view class="ava" :style="{backgroundImage: 'url(' + i.headPortrait + ')'}">
 									<u-badge v-if="i.unreadCount!==null" max="99" :value="i.unreadCount" :absolute="true">
@@ -483,7 +483,7 @@
 		}
 
 		.msgs {
-			/deep/ .u-swipe-action-item {
+			>>> .u-swipe-action-item {
 				border-radius: 24rpx;
 				margin: 20rpx 0;
 
